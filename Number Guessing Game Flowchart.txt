@@ -1,0 +1,22 @@
+# Random Number Guessing Game Flowchart
+
+```mermaid
+flowchart TD
+	Start ([Start])
+	GenerateNum[Generate a random number]
+	PlayerGuess[Prompt player to guess a number]
+	CheckGuess{Is the guess correct?}
+	TooHigh[Display "Too High! Try Again"]
+	TooLow[Display "Too Low! Try Again"]
+	Correct[Display "Correct! You Win!"]
+	End([End])
+
+Start --> GenerateNum
+GenerateNum --> PlayerGuess
+PlayerGuess --> CheckGuess
+CheckGuess -->|Yes| Correct
+CheckGuess -->|No, Too High| TooHigh
+CheckGuess -->|No, Too Low| TooLow
+TooHigh --> PlayerGuess
+TooLow --> PlayerGuess
+Correct --> End
