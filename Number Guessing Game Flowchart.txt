@@ -1,6 +1,8 @@
 # Random Number Guessing Game Flowchart
 
-```mermaid
+```
+mermaid
+
 flowchart TD
 	Start ([Start])
 	GenerateNum[Generate a random number]
@@ -20,3 +22,5 @@ CheckGuess -->|No, Too Low| TooLow
 TooHigh --> PlayerGuess
 TooLow --> PlayerGuess
 Correct --> End
+
+```
