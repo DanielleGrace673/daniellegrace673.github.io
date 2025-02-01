@@ -6,10 +6,10 @@ flowchart TD
     B --> C[Prompt Player to Guess a Number]
     C --> D{Is the Guess Correct?}    
     
-    D -- Yes --> E[Display "Correct! You Win!"]
+    D -- Yes --> E["Correct! You Win!"]
     E --> F([End])    
-    D -- No, Too High --> G[Display "Too High! Try Again"]
-    D -- No, Too Low --> H[Display "Too Low! Try Again"]    
+    D -- No, Too High --> G["Too High! Try Again"]
+    D -- No, Too Low --> H["Too Low! Try Again"]    
     G --> C
     H --> C
 End([End])
