@@ -12,5 +12,4 @@ flowchart TD
     D -- No, Too Low --> H["Too Low! Try Again"]    
     G --> C
     H --> C
-End([End])
 ```
