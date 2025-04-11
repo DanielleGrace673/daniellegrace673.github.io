@@ -11,7 +11,7 @@ function populateGradebook(data) {
 }
 
 // TODO REMOVE THIS
-// CALL the stubs to demonstrate the workflow
+// Call the stubs to demonstrate the workflow
 const gradeData = fetchGradeData();
 populateGradebook(gradeData);
 // END REMOVE
